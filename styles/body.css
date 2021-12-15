@@ -1,0 +1,27 @@
+#container {
+  display: flex;
+  flex-direction: column;
+}
+
+h2 {
+  font-size: 10em;
+}
+
+button {
+  background-color: #fdfdfd;
+  border: none;
+  padding: 20px 30px;
+  text-align: center;
+  font-size: 1.5em;
+  cursor: pointer;
+  transform: all 0.1s ease-in-out;
+}
+
+button:hover {
+  transform: scale(0.95);
+  border: 5px solid #e04242;
+}
+
+img {
+  width: 200px;
+}/*# sourceMappingURL=body.css.map */

@@ -1,0 +1,79 @@
+@mixin flex-center {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#gameinfo {
+    margin-top: 2em;
+    text-align: center;
+    margin-bottom: 2em;
+}
+
+#play {
+    width: 5em;
+    height: 3em;
+}
+
+#game {
+    background-color: teal;
+    min-width: 1024px;
+    min-height: 768px;
+    @include flex-center;
+    flex-wrap: wrap;
+}
+
+#start_screen {
+    @include flex-center;
+    gap: 20px;
+}
+
+#words {
+    display: none;
+    gap: 20px;
+    flex-direction: column;
+}
+
+#words>div {
+    display: flex;
+    gap: 10px 10px;
+}
+
+#guessing_blocks {
+    display: none;
+    flex-direction: row;
+    gap: 10px;
+    font-size: 5em;
+}
+
+#letter_holder {
+    display: none;
+    flex-direction: row;
+    margin-left: 10%;
+    margin-right: 10%;
+    flex-wrap: wrap;
+    gap: 10px 10px;
+    box-sizing: border-box;
+}
+
+#guessing_blocks div {
+    border-bottom: 1px solid black;
+    width: 40px;
+    padding: 20px;
+    content: "\200E"
+}
+
+#game_screen {
+    @include flex-center;
+    gap: 20px;
+}
+
+#win_screen,
+#lose_screen {
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+}

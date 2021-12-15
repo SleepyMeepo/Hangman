@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hangman Game by Raymond Yan </title>
+    <link rel="stylesheet" href="../styles/reset.css">
+    <link rel="stylesheet" href="../styles/body.css">
+    <link rel="stylesheet" href="../styles/game.css">
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous" defer></script>
+    <script type="text/javascript" src="../script/game.js" defer></script>
+</head>
+
+<body>
+    <div id="container">
+        <div id="gameinfo">
+            <h1>Hangman Game</h1>
+            <p>You are allowed up to 6 incorrect guesses per game before you lose. Guess wisely.</p>
+        </div>
+        <div id="game">
+            <div id="start_screen">
+                <h2>Hangman</h2>
+                <button id="play">Play</button>
+            </div>
+
+            <div id="words">
+                <p>Choose number of letters to guess:</p>
+                <div>
+                    <div class="choice" id="choice1"></div>
+                    <div class="choice" id="choice2"></div>
+                    <div class="choice" id="choice3"></div>
+                </div>
+            </div>
+
+            <div id="game_screen">
+                <div id="hangman">
+
+                </div>
+                <div id="guessing_blocks">
+
+                </div>
+                <div>
+                    <p id="word_length"></p>
+                    <p id="word_hint"></p>
+                </div>
+
+                <div id="letter_holder"></div>
+                <div id="guessed_letters"></div>
+            </div>
+            <div id="win_screen">
+                <h2>You Won!</h2>
+                <button class="reset_button">Play Again?</button>
+            </div>
+            <div id="lose_screen">
+                <h2>You Lost!</h2>
+                <p>You ran out of guesses.</p>
+                <button class="reset_button">Play Again?</button>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
